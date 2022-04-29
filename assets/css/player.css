@@ -1,0 +1,18 @@
+#playerApp {
+    width: 50%;
+    border: 1px rgb(7, 207, 7) solid;
+    margin: auto;
+}
+
+#cover>img {
+    width: 100%;
+}
+
+#navigation {
+    display: flex;
+    justify-content: space-around;
+}
+
+#navigation>img {
+    width: 20%;
+}

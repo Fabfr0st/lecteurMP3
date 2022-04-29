@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navPrincipal">
+            <i class="fa-solid fa-record-vinyl"></i>
+            <ul id="menuPrincipal">
+                <li><a href="./index.html">Player</a></li>
+                <li><a href="./form.html">Formulaire</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="" method="post" id="addMP3">
+            <div class="form-group">
+                <label for="mp3">Uploader votre mp3:</label>
+                <input type="file" id="mp3" name="mp3">
+            </div>
+            <div class="form-group">
+                <label for="cover">Uploader votre image d'album (jpg):</label>
+                <input type="file" id="cover" name="cover">
+            </div>
+            <div class="form-group">
+                <input type="text" name="title" placeholder="Titre">
+            </div>
+            <div class="form-group">
+                <input type="text" name="artiste" placeholder="Artiste">
+            </div>
+            <div class="form-group">
+                <select name="genre">
+                  <option value="">Genre</option>
+                  <option value="hiphop">Hip-hop</option>
+                  <option value="rock">Rock</option>
+                  <option value="metal">Métal</option>
+                  <option value="rap">Rap</option>
+                  <option value="jazz">Jazz</option>
+                  <option value="electro">Electro</option>
+                  <option value="pop">Pop</option>
+                </select>
+                <!--                 Sélectionner le genre:
+                <input type="radio" id="hiphop" name="genre"></input>
+                <label for="hiphop">Hip-hop</label>
+
+                <input type="radio" id="rock" name="genre"></input>
+                <label for="rock">Rock</label>
+                <input type="radio" id="jazz" name="genre"></input>
+                <label for="jazz">Jazz</label>
+                <input type="radio" id="electro" name="genre"></input>
+                <label for="electro">Electro</label>
+                <input type="radio" id="pop" name="genre"></input>
+                <label for="pop">Pop</label> -->
+            </div>
+            <div class="form-group">
+                <input type="number" name="annee" placeholder="Année">
+                <select name="annee">
+                  <option>Sélectionner l'année</option>
+                  <option>2000</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea name="desc" placeholder="Description"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="number" name="prix" placeholder="Prix">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enregistrer" name="submitted">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
