@@ -10,16 +10,24 @@
     />
     <link rel="stylesheet" href="./assets/css/menu.css">
     <link rel="stylesheet" href="./assets/css/form.css">
+    <script src="./assets/js/menu.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav id="navPrincipal">
-            <i class="fa-solid fa-record-vinyl"></i>
-            <ul id="menuPrincipal">
+            <div id="logo">
+                <!-- <i class="fa-solid fa-record-vinyl"></i> -->
+                <i class="fa-solid fa-compact-disc"></i>
+            </div>
+            <ul id="menuPrincipal" class="transLeft">
                 <li><a href="./index.html">Player</a></li>
                 <li><a href="./form.html">Formulaire</a></li>
             </ul>
+            <div id="burger" class="burgerUnselect">
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
         </nav>
     </header>
     <main>
@@ -40,14 +48,14 @@
             </div>
             <div class="form-group">
                 <select name="genre">
-                  <option value="">Genre</option>
-                  <option value="hiphop">Hip-hop</option>
-                  <option value="rock">Rock</option>
-                  <option value="metal">Métal</option>
-                  <option value="rap">Rap</option>
-                  <option value="jazz">Jazz</option>
-                  <option value="electro">Electro</option>
-                  <option value="pop">Pop</option>
+                    <option value="">Genre</option>
+                    <option value="hiphop">Hip-hop</option>
+                    <option value="rock">Rock</option>
+                    <option value="metal">Métal</option>
+                    <option value="rap">Rap</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="electro">Electro</option>
+                    <option value="pop">Pop</option>
                 </select>
                 <!--                 Sélectionner le genre:
                 <input type="radio" id="hiphop" name="genre"></input>
@@ -65,8 +73,8 @@
             <div class="form-group">
                 <input type="number" name="annee" placeholder="Année">
                 <select name="annee">
-                  <option>Sélectionner l'année</option>
-                  <option>2000</option>
+                    <option>Sélectionner l'année</option>
+                    <option>2000</option>
                 </select>
             </div>
             <div class="form-group">
